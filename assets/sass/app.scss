@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:700|Lato|Roboto+Condensed');
+@import 'reset';
+
+$large-font: 'Barlow';
+$title-font: 'Roboto Condensed';
+$descr-font: 'Lato';
+
+$main-clr: #333333;
+$light-clr: #8F8F8F;
+
+html {
+    font-size: 62.5%;
+}
+
+.main {
+    height: 100vh;
+    padding-left: calc((100% / 12) * 1);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page {
+
+    &__title {
+        font-family: $title-font;
+        color: $light-clr;
+
+        text-transform: uppercase;
+        font-size: 1.8rem;
+        letter-spacing: .18rem;
+
+        margin-bottom: 3rem;
+    }
+    &__large {
+        font-family: $large-font;
+        color: $main-clr;
+
+        font-size: 9.6rem;
+        font-weight: 700;
+    }
+    &__descr {
+        font-family: $descr-font;
+        color: $light-clr;
+
+        max-width: 27.4rem;
+        line-height: 150%;
+        font-size: 1.6rem;
+
+        margin-top: 11rem;        
+    }
+}
+
+
+@media screen and(max-width: 1080px) {
+    html {
+        font-size: 50%;
+    }
+    .main {
+        padding-left: 5rem;
+    }
+}
+
+@media screen and(max-width: 840px) {
+    .main {
+        padding-left: 2rem;
+    }
+    .page {
+        &__large {
+            font-size: 5rem;
+        }
+    }
+}
+@media screen and(max-width: 375px) {
+    .main {
+        padding-left: 2rem;
+    }
+    .page {
+        &__large {
+            font-size: 3.8rem;
+        }
+    }
+}
