@@ -38,12 +38,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@keyframes wave {
+  0% {
+    color: #aaaaaa; }
+  50% {
+    color: #000;
+    text-shadow: rgba(0, 0, 0, 0.2) 1px 0 1px; }
+  100% {
+    color: #5e5e5e; } }
+
 html {
   font-size: 62.5%; }
 
 .main {
   height: 100vh;
   padding-left: calc((100% / 12) * 1);
+  margin-bottom: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +67,7 @@ html {
 
 .page__title {
   font-family: "Roboto Condensed";
-  color: #8F8F8F;
+  color: #aaaaaa;
   text-transform: uppercase;
   font-size: 1.8rem;
   letter-spacing: .18rem;
@@ -70,11 +80,11 @@ html {
   font-weight: 700; }
 
 .page__descr {
-  font-family: "Lato";
-  color: #8F8F8F;
+  font-family: "Roboto";
+  color: #aaaaaa;
   max-width: 27.4rem;
-  line-height: 150%;
-  font-size: 1.6rem;
+  line-height: 200%;
+  font-size: 1.4rem;
   margin-top: 11rem; }
 
 @media screen and (max-width: 1080px) {
@@ -94,3 +104,20 @@ html {
     padding-left: 2rem; }
   .page__large {
     font-size: 3.8rem; } }
+
+/*
+*
+* ===========================================================
+* FOOTER
+* ===========================================================
+*
+*/
+.footer {
+  padding: 1.5rem calc((100% / 12) * 1);
+  background: #2F80ED;
+  color: #fff; }
+  .footer__soon {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem; }

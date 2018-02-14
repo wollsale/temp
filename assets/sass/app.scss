@@ -1,12 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow:700|Lato|Roboto+Condensed');
-@import 'reset';
-
 $large-font: 'Barlow';
 $title-font: 'Roboto Condensed';
-$descr-font: 'Lato';
+$descr-font: 'Roboto';
+
+$twelth: calc((100% / 12) * 1);
 
 $main-clr: #333333;
-$light-clr: #8F8F8F;
+$light-clr: rgb(170, 170, 170);
+$blue-clr: #2F80ED;
+$white-clr: #fff;
+
+@import url('https://fonts.googleapis.com/css?family=Barlow:700|Lato|Roboto+Condensed');
+@import 'reset';
+@import 'letters';
 
 html {
     font-size: 62.5%;
@@ -14,7 +19,8 @@ html {
 
 .main {
     height: 100vh;
-    padding-left: calc((100% / 12) * 1);
+    padding-left: $twelth;
+    margin-bottom: 3rem;
     
     display: flex;
     flex-direction: column;
@@ -22,7 +28,6 @@ html {
 }
 
 .page {
-
     &__title {
         font-family: $title-font;
         color: $light-clr;
@@ -45,8 +50,8 @@ html {
         color: $light-clr;
 
         max-width: 27.4rem;
-        line-height: 150%;
-        font-size: 1.6rem;
+        line-height: 200%;
+        font-size: 1.4rem;
 
         margin-top: 11rem;        
     }
@@ -80,5 +85,28 @@ html {
         &__large {
             font-size: 3.8rem;
         }
+    }
+}
+
+
+
+/*
+*
+* ===========================================================
+* FOOTER
+* ===========================================================
+*
+*/
+
+.footer {
+    padding: 1.5rem $twelth;
+    background: $blue-clr;
+    color: $white-clr;
+
+    &__soon {
+        font-family: $descr-font;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-size: 1.2rem;
     }
 }
