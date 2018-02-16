@@ -1,1 +1,142 @@
-@import url(https://fonts.googleapis.com/css?family=Barlow:700|Roboto|Roboto+Condensed);*{box-sizing:border-box}a{text-decoration:none}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,mark,menu,nav,object,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}.page__large{line-height:120%;overflow:hidden}.page__large .word{display:inline-block;transform:translateY(100%)}.page__large .word--is-animated{transform:translateY(0);transition:transform .7s cubic-bezier(.39,.3,.23,.92)}html{font-size:62.5%}html body{opacity:0;transition:opacity .2s linear}.main{height:100vh;padding-left:8.33333%;margin-bottom:3rem;display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:center;justify-content:center}.page__title{font-family:Roboto Condensed;color:#aaa;text-transform:uppercase;font-size:1.8rem;letter-spacing:.18rem;margin-bottom:3rem}.page__large{font-family:Barlow;color:#333;font-size:9.6rem;font-weight:700}.page__large:last-of-type{margin-top:-2rem}@media screen and (max-width:375px){.page__large:last-of-type{margin-top:0}}.page__descr{font-family:Roboto;color:#aaa;max-width:27.4rem;line-height:200%;font-size:1.4rem;margin-top:11rem}@media screen and (max-width:1080px){html{font-size:50%}.main{padding-left:5rem}}@media screen and (max-width:840px){.main{padding-left:2rem}.page__large{font-size:5rem}}@media screen and (max-width:375px){.main{padding-left:2rem}.page__large{font-size:3.8rem}}.footer{padding:1.5rem 8.33333%;background:#2f80ed;color:#fff}.footer__soon{font-family:Roboto;text-transform:uppercase;letter-spacing:.1em;font-size:1.2rem}
+@import url(https://fonts.googleapis.com/css?family=Barlow:700|Roboto|Roboto+Condensed);/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@keyframes wave {
+  0% {
+    color: #aaaaaa; }
+  50% {
+    color: #000;
+    text-shadow: rgba(0, 0, 0, 0.2) 1px 0 1px; }
+  100% {
+    color: #5e5e5e; } }
+
+.page__large {
+  line-height: 120%;
+  overflow: hidden; }
+  .page__large .word {
+    display: inline-block;
+    transform: translateY(100%); }
+    .page__large .word--is-animated {
+      transform: translateY(0%);
+      transition: 0.7s transform cubic-bezier(0.39, 0.3, 0.23, 0.92); }
+
+html {
+  font-size: 62.5%; }
+  html body {
+    opacity: 0;
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear; }
+
+.main {
+  height: 100vh;
+  padding-left: calc((100% / 12) * 1);
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.page__title {
+  font-family: "Roboto Condensed";
+  color: #aaaaaa;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: .18rem;
+  margin-bottom: 3rem; }
+
+.page__large {
+  font-family: "Barlow";
+  color: #333333;
+  font-size: 9.6rem;
+  font-weight: 700; }
+  .page__large:last-of-type {
+    margin-top: -2rem; }
+    @media screen and (max-width: 375px) {
+      .page__large:last-of-type {
+        margin-top: 0; } }
+
+.page__descr {
+  font-family: "Roboto";
+  color: #aaaaaa;
+  max-width: 27.4rem;
+  line-height: 200%;
+  font-size: 1.4rem;
+  margin-top: 11rem; }
+
+@media screen and (max-width: 1080px) {
+  html {
+    font-size: 50%; }
+  .main {
+    padding-left: 5rem; } }
+
+@media screen and (max-width: 840px) {
+  .main {
+    padding-left: 2rem; }
+  .page__large {
+    font-size: 5rem; } }
+
+@media screen and (max-width: 375px) {
+  .main {
+    padding-left: 2rem; }
+  .page__large {
+    font-size: 3.8rem; } }
+
+/*
+*
+* ===========================================================
+* FOOTER
+* ===========================================================
+*
+*/
+.footer {
+  padding: 1.5rem calc((100% / 12) * 1);
+  background: #2F80ED;
+  color: #fff; }
+  .footer__soon {
+    font-family: "Roboto";
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem; }
