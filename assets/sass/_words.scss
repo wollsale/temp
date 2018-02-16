@@ -1,0 +1,16 @@
+$ease : cubic-bezier(.39,.3,.23,.92);
+
+.page__large {
+    line-height: 120%;
+    overflow: hidden;
+    
+    .word {
+        display: inline-block;
+        transform: translateY(100%);
+
+        &--is-animated {
+            transform: translateY(0%);
+            transition: .7s transform $ease;
+        }
+    }
+}
