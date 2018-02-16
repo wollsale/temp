@@ -100,6 +100,10 @@ html {
         &__large {
             font-size: 3.8rem;
         }
+        &__descr {
+            font-size: 1.8rem;
+            max-width: none;
+        }
     }
 }
 

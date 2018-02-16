@@ -122,7 +122,10 @@ html {
   .main {
     padding-left: 2rem; }
   .page__large {
-    font-size: 3.8rem; } }
+    font-size: 3.8rem; }
+  .page__descr {
+    font-size: 1.8rem;
+    max-width: none; } }
 
 /*
 *
