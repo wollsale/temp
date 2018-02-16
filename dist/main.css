@@ -125,7 +125,8 @@ html {
     font-size: 3.8rem; }
   .page__descr {
     font-size: 1.8rem;
-    max-width: none; } }
+    max-width: none;
+    margin-right: calc((100% / 12) * 1); } }
 
 /*
 *
