@@ -4,4 +4,4 @@ $dark-clr: #000;
     0% { color: $light-clr; }
     50% { color: $dark-clr; text-shadow: rgba($dark-clr, 0.2) 1px 0 1px; }
     100% { color: darken($light-clr, 30%); }
-} 
+}

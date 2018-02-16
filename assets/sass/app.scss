@@ -12,10 +12,16 @@ $white-clr: #fff;
 @import url('https://fonts.googleapis.com/css?family=Barlow:700|Roboto|Roboto+Condensed');
 @import 'reset';
 @import 'letters';
+@import 'words';
 
 
 html {
     font-size: 62.5%;
+
+    body {
+        opacity: 0;
+        transition: opacity .2s linear;
+    }
 }
 
 .main {
@@ -45,6 +51,10 @@ html {
 
         font-size: 9.6rem;
         font-weight: 700;
+
+        &:last-of-type {
+            margin-top: -2rem;
+        }
     }
     &__descr {
         font-family: $descr-font;

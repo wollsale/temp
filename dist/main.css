@@ -47,8 +47,22 @@ table {
   100% {
     color: #5e5e5e; } }
 
+.page__large {
+  line-height: 120%;
+  overflow: hidden; }
+  .page__large .word {
+    display: inline-block;
+    transform: translateY(100%); }
+    .page__large .word--is-animated {
+      transform: translateY(0%);
+      transition: 0.7s transform cubic-bezier(0.39, 0.3, 0.23, 0.92); }
+
 html {
   font-size: 62.5%; }
+  html body {
+    opacity: 0;
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear; }
 
 .main {
   height: 100vh;
@@ -78,6 +92,8 @@ html {
   color: #333333;
   font-size: 9.6rem;
   font-weight: 700; }
+  .page__large:last-of-type {
+    margin-top: -2rem; }
 
 .page__descr {
   font-family: "Roboto";
