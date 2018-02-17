@@ -36,8 +36,8 @@ let config = {
                             use: ['css-loader', 'sass-loader', 'postcss-loader'],
                     }))
 				},
-				/*{
-					test: /\.(png|jp(e*)g|svg)$/,
+				{
+					test: /\.(png|jp(e*)g|svg|xml|icon|webmanifest)$/,
 					use: [
 						{
 							loader: 'url-loader',
@@ -47,18 +47,15 @@ let config = {
 							}
 						}
 					]
-                }
-                */
-				]
+                }]
 			},
 			plugins: [
 				new ExtractTextWebpackPlugin('[name].css'),
 				new DashboardPlugin,
 				new WriteFilePlugin(),
-				/*new CopyWebpackPlugin([
-					{ from: './assets/images', to: './images' },
-					{ from: './assets/fonts', to: './fonts' },
-				])*/
+				new CopyWebpackPlugin([
+					{ from: './assets/icons', to: './icons' },
+				])
 			],
 			devServer: {
 				contentBase: path.resolve(__dirname, './dist'),
